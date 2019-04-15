@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Titulo de pestaña -->
+		<title>
+			{% block title %}		
+			{% endblock %}
+			| Web Personal
+		</title>
+
+		<!-- Titulo de pestaña -->
+		
+	</head>
+	<body>
+		<!-- cabecera y menu -->
+		<ul>
+			<li>
+				<a href="/">Home</a>	
+			</li>
+			<li>
+				<a href="/about/">About</a>	
+			</li>
+			<li>
+				<a href="/porfolio/">Porfolio</a>	
+			</li>
+			<li>
+				<a href="/contact/">Contact</a>	
+			</li>
+		</ul>
+
+		<!-- contenido -->
+		{% block content %}
+		
+		{% endblock %}
+		<!-- contenido -->
+
+
+	</body>
+</html>
