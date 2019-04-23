@@ -9,8 +9,5 @@ def home (request):
 def about (request):
 	return render (request, "core/about.html")
 
-def porfolio (request):
-	return render (request, "core/porfolio.html")
-
 def contact (request):
 	return render (request, "core/contact.html")

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,7 +17,7 @@
     <link href="{% static 'core/css/clean-blog.min.css' %}" rel="stylesheet">
 
   </head>
-
+    
   <body>
 
     <!-- Navegación -->
@@ -59,8 +57,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
             	{% block headers-cabecera %}
-            	{% endblock %}
-              
+            	{% endblock %}              
             </div>
           </div>
         </div>
@@ -70,15 +67,14 @@
 
 
     <!-- contenido -->
-	{% block content %}	
-	
-	{% endblock %}
-	<!-- contenido -->
-	
+  	{% block content %}
+  	{% endblock %}
+  	<!-- contenido -->
+  	
 
-	{% if request.path != "/" %}
-	<hr>
-	{% endif %}
+  	{% if request.path != "/" %}
+  	<hr>
+  	{% endif %}
 
     <!-- Pié de página -->
     <footer>
@@ -111,7 +107,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; 2018 · Crlts Mrtnz </p>
+            <p class="copyright text-muted">Copyright &copy; 2019 · Crlts Mrtnz </p>
           </div>
         </div>
       </div>
@@ -121,7 +117,5 @@
     <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'core/js/clean-blog.min.js' %}"></script>
-
   </body>
-
 </html>
